@@ -41,7 +41,7 @@ function draw() {
 }
 
 function drawEllipse() {
-  fill("f00");
+  fill("f77600");
   ellipse(mouseX, mouseY, 100);
 }
 
@@ -63,5 +63,44 @@ function drawEllipse() {
 *******************************************************************************/
 
 function drawSplatter(){
+fill(random(100, 256), random(100, 256), random(100, 256));
+noStroke();
+let ellipses = random(10, 15);
 
+let spread = slider.value();
+
+for(let i = 0; i < ellipses; i++) {
+
+
+
+}
+for(let i = 0; i < ellipses; i++) {
+
+  let randomSize = random(5, 15);
+
+  
+
+}
+for(let i = 0; i < ellipses; i++) {
+
+  let randomSize = random(5, 15);
+
+  let randomX = random(mouseX - spread, mouseX + spread + 1);
+
+  let randomY = random(mouseY - spread, mouseY + spread + 1);
+
+
+
+}
+for(let i = 0; i < ellipses; i++) {
+
+  let randomSize = random(5, 15);
+
+  let randomX = random(mouseX - spread, mouseX + spread + 1);
+
+  let randomY = random(mouseY - spread, mouseY + spread + 1);
+
+  ellipse(randomX, randomY, randomSize);
+
+}
 }
